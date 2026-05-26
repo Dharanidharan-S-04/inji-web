@@ -24,7 +24,7 @@ export const IssuersPage: React.FC = () => {
                 apiRequest.methodType,
                 apiRequest.headers()
             );
-            const issuers = response?.response?.issuers.filter((issuer: IssuerObject) => issuer.protocol !== "OTP")
+            const issuers = response?.response?.issuers;
             dispatch(storeFilteredIssuers(issuers));
             dispatch(storeIssuers(issuers));
         }
