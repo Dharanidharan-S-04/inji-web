@@ -15,7 +15,7 @@ export const Issuer: React.FC<IssuerProps> = ({issuer, index}) => {
                  url={issuerDisplayObject?.logo.url}
                  title={issuerDisplayObject?.name}
                  description={issuerDisplayObject?.description}
-                onClick={() => {
+                 onClick={() => {
                     if (issuer.protocol === "OTP") {
                         navigate(`/otp/${issuer.credential_issuer}`);
                     } else {
