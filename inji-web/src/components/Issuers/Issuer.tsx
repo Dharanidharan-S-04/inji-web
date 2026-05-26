@@ -16,14 +16,7 @@ export const Issuer: React.FC<IssuerProps> = ({issuer, index}) => {
                  title={issuerDisplayObject?.name}
                  description={issuerDisplayObject?.description}
                  onClick={() => {
-                    if (issuer.protocol === "OTP") {
-                        navigate(`/otp/${issuer.credential_issuer}`);
-                    } else {
-                        navigate(`/issuers/${issuer.credential_issuer}`);
-                    }
-                 }}
-            />
-                 {/* onClick={() => navigate(`/issuers/${issuer.credential_issuer}`)}/> */}
+                 { onClick={() => navigate(`/issuers/${issuer.credential_issuer}`)}/> }
     </React.Fragment>
 }
 
