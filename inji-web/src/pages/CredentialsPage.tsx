@@ -39,10 +39,6 @@ export const CredentialsPage: React.FC = () => {
             dispatch(storeSelectedIssuer(response?.response));
             setSelectedIssuer(response?.response);
 
-            if (issuer?.protocol === "OTP") {
-                return;
-            }
-
             apiRequest = api.fetchIssuersWellknown;
             response = await fetchRequest(
                 apiRequest.url(params.issuerId ?? ""),
