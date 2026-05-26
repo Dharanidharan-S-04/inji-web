@@ -8,13 +8,6 @@ on:
   push:
     branches:
       - '!release-branch'
-      - release*
-      - master
-      - 1.*
-      - develop
-      - qa-develop
-      - MOSIP*
-      - injiweb*
       - 0.11.0
 
 jobs:
