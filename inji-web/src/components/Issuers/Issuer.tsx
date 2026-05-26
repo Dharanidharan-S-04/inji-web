@@ -21,7 +21,8 @@ export const Issuer: React.FC<IssuerProps> = ({issuer, index}) => {
                     } else {
                         navigate(`/issuers/${issuer.credential_issuer}`);
                     }
-                }}
+                 }}
+            />
                  {/* onClick={() => navigate(`/issuers/${issuer.credential_issuer}`)}/> */}
     </React.Fragment>
 }
